@@ -19,7 +19,21 @@
     --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
     --pages-color: linear-gradient(90deg, #fff, #ddd);
     --border: .125rem solid #00abf0;
-    --box-shadow: 0 0 .6rem rgba(0, 0, 0,.2);
+    --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
+}
+
+@keyframes show-animate {
+
+    0%,
+    30% {
+        opacity: 0;
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
 }
 
 body {
@@ -39,17 +53,6 @@ body {
     padding: 2rem;
     perspective: 250rem;
     animation: show-animate 2s forwards;
-}
-
-@keyframes show-animate {
-    0%,30% {
-        opacity: 0;
-        transform: rotate(-20deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(0deg);
-    }
 }
 
 .cover {
