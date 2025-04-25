@@ -518,4 +518,16 @@ body {
     html {
         font-size: 40%;
     }
+
+    .profile-page p {
+        font-size: .8rem;
+        text-align: justify;
+    }
+
+    .btn {
+        width: 6rem;
+        height: 1.6rem;
+        font-size: .8rem;
+        font-weight: 400;
+    }
 }
