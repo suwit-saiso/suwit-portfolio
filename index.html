@@ -1,695 +1,217 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-
-    <title>SUWIT SAISO - Personal Website</title>
-
-    <!-- Meta Keywords and Description -->
-    <meta name="keywords" content="personal website, portfolio, cv, resume, suwit saiso, html, css, javascript">
-    <meta name="description" content="This is Personal website of SUWIT SAISO">
-    <meta name="author" content="Suwit Saiso">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-
-    <!-- Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
-
-    <!-- Main CSS Files -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Color CSS -->
-    <link rel="stylesheet" href="css/color.css">
-
-    <!-- Icon Fonts - Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <!-- Animate CSS-->
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
-
-    <!-- Google Webfonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suwit Saiso</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right"></div>
 
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status" class="la-ball-triangle-path lds-ripple">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="book">
+            <!-- profile page -->
+             <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="./images/profile.jpg" alt="">
+                    <h1>Suwit Saiso</h1>
+                    <h3>Software Developer</h3>
+
+                    <div class="social-media">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+
+                    <p>Hi, I'm Suwit Saiso. Recent Computer Engineering graduate with a strong passion for technology and continuous learning. Eager to apply academic knowledge to real-world challenges, develop practical skills, and contribute to a dynamic team environment. Quick to adapt, highly motivated, and ready to grow in a professional setting.<p>
+
+                    <div class="btn-box">
+                        <a href="./other/Suwit Saiso - CV.pdf" class="btn" download="Suwit Saiso - CV">Dowload CV</a>
+                        <a href="#" class="btn contact-me"">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <!-- page 1 & page 2 -->
+            <div class="book-page page-right turn" id="turn-1">
+                <!-- page 1 (work experience) -->
+                <div class="page-front">
+                    <h1 class="title">Work Experience</h1>
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>1/04/2024 - 14/06/2024</span>
+                            <h3>Field Service Engineer (Network) - Yip In Tsoi & Co.,Ltd. - YipInTsoi Group</h3>
+                            <p>
+                                Studied core networking concepts, including architecture, data transmission, and key protocols (TCP/IP, HTTP, DNS, etc.). Learned about networking devices and their roles, practiced IP addressing and subnetting, used Wireshark for packet analysis, and developed basic troubleshooting skills.
+                            </p>
+                        </div>
+                        <!-- <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2024 - 2024</span>
+                            <h3>Position - Company</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam accusantium quis assumenda dicta tenetur ipsam? Eveniet reiciendis eaque ab fugit illum at asperiores quod.</p>
+                        </div> -->
+                    </div>
+                    <span class="number-page">1</span>
+                    <!-- next button -->
+                    <span class="nextprev-btn" data-page="turn-1">
+                        <i class='bx bx-chevron-right'></i>
+                    </span>
+                </div>
+                <!-- page 2 (education) -->
+                <div class="page-back">
+                    <h1 class="title">Education</h1>
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>21/06/2021 - Present</span>
+                            <h3>Bachelor of Computer Engineering - Naresuan University</h3>
+                            <span class="year"><i class='bx bx-map-pin'></i>Phitsanulok, Thailand</span>
+                            <div class="img-box">
+                                <img src="./images/education.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2024 - 2024</span>
+                            <h3>Position - Company</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam accusantium quis assumenda dicta tenetur ipsam? Eveniet reiciendis eaque ab fugit illum at asperiores quod.</p>
+                        </div> -->
+                    </div>
+                    <span class="number-page">2</span>
+                    <!-- prev button -->
+                    <span class="nextprev-btn back" data-page="turn-1">
+                        <i class='bx bx-chevron-left' ></i>
+                    </span>
+                </div>
+            </div>
+            <!-- page 3 & page 4 -->
+            <div class="book-page page-right turn" id="turn-2">
+                <!-- page 3 (my services) -->
+                <div class="page-front">
+                    <h1 class="title">My Services</h1>
+                    <div class="services-box">
+                        <div class="services-content">
+                            <i class='bx bx-question-mark'></i>
+                            <h3>No Data</h3>
+                            <p>Waiting for information.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                        <!-- <div class="services-content">
+                            <i class='bx bx-code-alt' ></i>
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                        <div class="services-content">
+                            <i class='bx bx-code-alt' ></i>
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                        <div class="services-content">
+                            <i class='bx bx-code-alt' ></i>
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div> -->
+                    </div>
+                    <span class="number-page">3</span>
+                    <!-- next button -->
+                    <span class="nextprev-btn" data-page="turn-2">
+                        <i class='bx bx-chevron-right'></i>
+                    </span>
+                </div>
+                <!-- page 4 (my skills) -->
+                <div class="page-back">
+                    <h1 class="title">My Skills</h1>
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <h3>Front-End</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-html5' ></i>HTML</span>
+                                <span><i class='bx bxl-css3' ></i>CSS</span>
+                                <span><i class='bx bxl-javascript' ></i>JS</span>
+                                <span><i class='bx bxl-bootstrap' ></i>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="skills-content">
+                            <h3>Back-End</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-python' ></i>Python</span>
+                                <span><i class='bx bxl-java' ></i>Java</span>
+                                <span><i class='bx bxl-php' ></i>PHP</span>
+                            </div>
+                        </div>
+                        <div class="skills-content">
+                            <h3>UX / UI Design</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-figma' ></i>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="number-page">4</span>
+                    <!-- prev button -->
+                    <span class="nextprev-btn back" data-page="turn-2">
+                        <i class='bx bx-chevron-left' ></i>
+                    </span>
+                </div>
+            </div>
+            <!-- page 5 & page 6 -->
+            <div class="book-page page-right turn" id="turn-3">
+                <!-- page 5 (latest project or my portfolio) -->
+                <div class="page-front">
+                    <h1 class="title">Latest Project</h1>
+                    <div class="portfolio-box">
+                        <div class="img-box">
+                            <img src="./images/portfolio.JPG" alt="">
+                        </div>
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3>ASKRS</h3>
+                                <a href="https://github.com/suwit-saiso/Authenticated-Secure-Key-Recovery-System" target="_blank">Senior Project<i class='bx bx-link-external' ></i></a>
+                            </div>
+                            <p>Tech Used: Python, Flask, Socket Connection, Docker</p>
+                            <p>Designed and built a secure Key Recovery System (KRS) to prevent data loss from key mismanagement. Added PKCE-like challenge and certificate/token-based authentication to boost security and reliability.</p>
+                        </div>
+                        <div class="btn-box">
+                            <a href="https://github.com/suwit-saiso/Authenticated-Secure-Key-Recovery-System" class="btn" target="_blank">Source Code</a>
+                            <a href="https://github.com/suwit-saiso/trading-website" class="btn" target="_blank">More Projects</a>
+                        </div>
+                    </div>
+                    <span class="number-page">5</span>
+                    <!-- next button -->
+                    <span class="nextprev-btn" data-page="turn-3">
+                        <i class='bx bx-chevron-right'></i>
+                    </span>
+                </div>
+                <!-- page 6 (contact me) -->
+                <div class="page-back">
+                    <h1 class="title">Contact Me</h1>
+                    <div class="contact-box">
+                        <form action="#">
+                            <input type="text" class="field" placeholder="Full Name" required>
+                            <input type="email" class="field" placeholder="Email Address" required>
+                            <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+                            <input type="submit" class="btn" value="Send Message">
+                        </form>
+                    </div>
+                    <span class="number-page">6</span>
+                    <!-- prev button -->
+                    <span class="nextprev-btn back" data-page="turn-3">
+                        <i class='bx bx-chevron-left' ></i>
+                    </span>
+                    <a href="#" class="back-profile">
+                        <p>Profile</p>
+                        <i class='bx bxs-user' ></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<!-- End of Preloader -->
 
-<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
-    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
-</div>
-
-<div id="wrapper">
-
-    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-        <div id="header" class="nav-collapse">
-            <div class="row clearfix">
-                <div class="col-1">
-
-                    <!--Logo-->
-                    <div id="logo">
-
-                        <!--Logo that is shown on the banner-->
-                        <img src="https://seeklogo.com/images/S/s-letter-logo-3FDB009CF3-seeklogo.com.png" id="banner-logo" alt="Landing Page"/>
-                        <!--End of Banner Logo-->
-
-                        <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="https://seeklogo.com/images/S/s-letter-logo-3FDB009CF3-seeklogo.com.png" id="navigation-logo" alt="Landing Page"/>
-                        <!--End of Navigation Logo-->
-
-                    </div>
-                    <!--End of Logo-->
-
-                    <aside>
-
-                        <!--Social Icons in Header-->
-                        <ul class="social-icons">
-                            <li>
-                                <a target="_blank" title="Facebook" href="https://www.facebook.com/profile.php?id=100088287427924">
-                                    <i class="fa-brands fa-facebook-f fa-1x"></i><span>Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Instagram" href="https://instagram.com/ssuwittt?igshid=MzRlODBiNWFlZA==">
-                                    <i class="fa-brands fa-instagram fa-1x"></i><span>Instagram</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="X-Twitter" href="https://www.twitter.com/">
-                                    <i class="fa-brands fa-x-twitter fa-1x"></i><span>X-Twitter</span>
-                                </a>
-                            </li>
-                            <li>
-                            <li>
-                                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/r-o-%E3%83%BC-n-y-n-e-ab64b7292/">
-                                    <i class="fa-brands fa-linkedin-in fa-1x"></i><span>Linkedin</span>
-                                </a>
-                        </ul>
-                        <!--End of Social Icons in Header-->
-
-                    </aside>
-
-                    <!--Main Navigation-->
-                    <nav id="nav-main">
-                        <ul>
-                            <li>
-                                <a href="#banner">Home</a>
-                            </li>
-                            <li>
-                                <a href="#about">About</a>
-                            </li>
-                            <li>
-                                <a href="#education">Education</a>
-                            </li>
-                            <li>
-                                <a href="#working_experience">Working Experience</a>
-                            </li>
-                            <li>
-                                <a href="#projects">Projects</a>
-                            </li>
-                            <li>
-                                <a href="#activities">Activities</a>
-                            </li>
-                            <li>
-                                <a href="#certificates">Certificates</a>
-                            </li>
-                            <li>
-                                <a href="#files">Files</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!--End of Main Navigation-->
-
-                    <div id="nav-trigger"><span></span></div>
-                    <nav id="nav-mobile"></nav>
-
-                </div>
-            </div>
-        </div><!--End of Header-->
-
-        <!--Banner Content-->
-        <div id="banner-content" class="row clearfix">
-
-            <div class="col-38">
-
-                <div class="section-heading">
-                    <h1>SUWIT SAISO PERSONAL WEBSITE</h1>
-                    <h2>Welcome to my personal website! Here, you'll discover my creative projects and passions. Feel free to explore, connect, and be inspired. Thanks for visiting!</h2>
-                </div>
-
-                <!--Call to Action-->
-                <a href="#about" class="button">START EXPLORE</a>
-                <!--End Call to Action-->
-
-            </div>
-
-        </div>
-        <!--End of Row-->
-
-    </header>
-
-    <!--Main Content Area-->
-    <main id="content">
-
-        <!--Introduction-->
-        <section id="about" class="introduction scrollto">
-
-            <div class="row clearfix">
-
-                <div class="col-3">
-                    <div class="section-heading">
-                        <h3>SKILLS</h3>
-                        <h2 class="section-title" style="text-transform: uppercase;">This is part of my skills. In the future, I will learn to know more.</h2>
-                        <p class="section-subtitle">I keep learning all the time. What you see is only part of what I'm giving you as an example.</p>
-                    </div>
-
-                </div>
-
-                <div class="col-2-3">
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa-brands fa-html5 fa-2x"></i>
-                            <i class="fa-brands fa-css3-alt fa-2x"></i>
-                            <i class="fa-brands fa-square-js fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>HTML5 &amp; CSS3 &amp; JavaScript</h4>
-                            <p>Basic web page design This website is one of them.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-bolt fa-2x"></i>
-                            <i class="fa-brands fa-java fa-2x"></i>
-                            <i class="fa-brands fa-python fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Programming Language</h4>
-                            <p>I'm skilled in C, C#, C++, Python, and Java, enabling me to handle diverse coding projects efficiently and effectively.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa-solid fa-database fa-2x"></i>
-                            <i class="fa-brands fa-linux fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Database Knowledge</h4>
-                            <p>I have a basic understanding of databases, including concepts like data modeling and SQL. I can work with relational databases like MySQL and PostgreSQL for basic data operations.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa-solid fa-server fa-2x"></i>
-                            <i class="fa-solid fa-network-wired fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Cyber Security Knowledge</h4>
-                            <p>I have basic cybersecurity knowledge covering network security, encryption, and password security. I'm aware of common threats like phishing and malware and am committed to improving my cybersecurity skills.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                </div>
-
-                <div class="col-1">
-                    <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa-solid fa-network-wired fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Network Knowledge</h4>
-                            <p>I have a basic understanding of computer networking, with a fundamental grasp of network architecture, protocols, and security. My familiarity includes basic network design, basic routing and switching concepts, basic knowledge of network security fundamentals, basic wireless networking, basic cloud solutions, and a foundational understanding of network virtualization. I am eager to continue learning and building upon these basic network skills to support businesses in an increasingly interconnected digital landscape.</p>
-                        </div>
-                    </div>
-    
-                    <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa-brands fa-redhat fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Penetration Testing</h4>
-                            <p>
-                                As a beginner in penetration testing and web exploitation, I'm currently learning to use Kali Linux and tools like Burp Suite to uncover and address vulnerabilities. I'm enthusiastic about participating in Capture The Flag (CTF) challenges, where I'm honing my problem-solving skills and gaining experience in tackling evolving threats. Committed to ethical standards, my aim is to build a foundation in cybersecurity and contribute to enhancing digital security for organizations.
-                            </p>
-                        </div>
-                    </div>
-    
-                    <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa-solid fa-gamepad fa-2x"></i>
-                            <i class="fa-brands fa-unity fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Game Development</h4>
-                            <p>As a beginner game developer, I'm enthusiastic about learning the ropes, with a particular focus on Unreal Engine. While I'm also exploring Unity, I'm captivated by Unreal Engine's potential for crafting immersive digital worlds. I'm just starting out, experimenting with designing environments, getting a grip on character animations, and dipping my toes into scripting gameplay interactions. My journey is fueled by a passion for continuous learning and innovation, as I embark on the path to share interactive stories with the world, one virtual adventure at a time.</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-
-
-
-        </section>
-        <!--End of Introduction-->
-
-        <!--Educatuin Tables-->
-        <section id="education" class="secondary-color text-center scrollto clearfix ">
-            <div class="row clearfix">
-
-                <div class="section-heading">
-                    <h3>EDUCATION</h3>
-                    <h2 class="section-title" style="text-transform: uppercase;">educational record</h2>
-                </div>
-
-                <!-- High School Block -->
-                <div class="education-block col-2 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="education-block-content">
-                        <h3>Mettawittaya School</h3>
-                        <p class="education-sub">
-                            Primary and High School
-                        </p>
-                        <div class="education">
-                            <div class="detail">
-                                <img src="images/education-01.jpg" alt="">
-                            </div>
-                            <p>
-                                Me and my friends in Mettawittaya School.
-                            </p>
-                        </div>
-                        <p>
-                            2008 - 2021
-                        </p>
-                        <a href="" class="button">READ MORE</a>
-                    </div>
-                </div>
-                <!-- End Primary-High Block -->
-
-                <!-- Bachelor Block -->
-                <div class="education-block featured col-2 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="education-block-content">
-                        <h3>Naresuan University</h3>
-                        <p class="education-sub">Bachelor's Degrees</p>
-                        <div class="education">
-                            <div class="detail"><img src="images/education-02.jpg" alt=""></div>
-                            <p>NU Robot Club | Naresuan University.</p>
-                        </div>
-                        <p>
-                            2021 - present
-                        </p>
-                        <a href="" class="button">READ MORE</a>
-                    </div>
-                </div>
-                <!--End Bachelor Block-->
-
-            </div>
-        </section>
-        <!--End of Education Tables-->
-
-        <!--Content Section-->
-        <div id="working_experience" class="scrollto clearfix">
-
-            <div class="row no-padding-bottom clearfix">
-
-                <!--Content of the Right Side-->
-                <div class="col-1">
-                    <div class="section-heading">
-                        <h3>WORKING EXPERIENCE</h3>
-                        <h2 class="section-title" style="text-transform: uppercase;">Infomation Cards</h2>
-                    </div>
-                    <div class="card_container">
-                        <div class="card">
-                            <div class="img">
-                                <img src="https://seeklogo.com/images/Q/question-mark-logo-C0484621C4-seeklogo.com.png" alt="profile">
-                            </div>
-                            <div class="contents">
-                                <h2>01</h2>
-                                <h3>NO DATA</h3>
-                                <p>
-                                    No experience.
-                                </p>
-                                <a class="read-more-link" href="">Read More</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="img">
-                                <img src="https://seeklogo.com/images/Q/question-mark-logo-C0484621C4-seeklogo.com.png" alt="profile">
-                            </div>
-                            <div class="contents">
-                                <h2>02</h2>
-                                <h3>NO DATA</h3>
-                                <p>
-                                    No experience.
-                                </p>
-                                <a class="read-more-link" href="">Read More</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="img">
-                                <img src="https://seeklogo.com/images/Q/question-mark-logo-C0484621C4-seeklogo.com.png" alt="profile">
-                            </div>
-                            <div class="contents">
-                                <h2>03</h2>
-                                <h3>NO DATA</h3>
-                                <p>
-                                    No experience.
-                                </p>
-                                <a class="read-more-link" href="">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Content Right Side-->
-                
-            </div>
-            
-        </div>
-        <!--End of Content Section-->
-
-        <!-- Quotes -->
-        <aside id="quotes" class="scrollto text-center" data-enllax-ratio=".2">
-                    
-            <div class="row clearfix">
-
-                <div class="section-heading">
-                    <h3>QUOTES</h3>
-                    <h2 class="section-title" style="text-transform: uppercase;">My Favarite Quotes</h2>
-                </div>
-
-                <!-- 1st Quote -->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="https://parade.com/.image/t_share/MTkwNTgwOTUyNjU2Mzg5MjQ1/albert-einstein-quotes-jpg.jpg" alt="User"/>
-                    <q>Life is like riding a bicycle. To keep your balance, you must keep moving.</q>
-                    <footer>- Albert Einstein</footer>
-                </blockquote>
-                <!-- End of 1st Quotes-->
-
-                <!-- 2nd Quote -->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="User"/>
-                    <q>I never think of the future. It comes soon enough.</q>
-                    <footer>- Albert Einstein</footer>
-                </blockquote>
-                <!-- End of 2nd Quotes -->
-
-                <!-- 3rd Quote -->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="https://www.chemistry.msu.edu/_assets/_images/portraits/Albert%20Einstein.jpg" alt="User"/>
-                    <q>Insanity is doing the same thing over and over again and expecting different results</q>
-                    <footer>- Albert Einstein</footer>
-                </blockquote>
-                <!-- End of  3rd Quote -->
-
-            </div>
-
-        </aside>
-        <!-- End of Quotes -->
-
-        <!-- Projects -->
-        <section id="projects" class="scrollto clearfix">
-            <div class="row clearfix">
-
-                <div class="col-3">
-
-                    <div class="section-heading">
-                        <h3>PROJECTS</h3>
-                        <h2 class="section-title" style="text-transform: uppercase;">My interesting project</h2>
-                        <p class="section-subtitle">These cards show you my interesting projects that I ever created.</p>
-                    </div>
-
-                </div>
-
-                <div class="col-2-3">
-
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="card swiper-slide">
-                                <div class="card_image">
-                                    <img src="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" alt="card Image">
-                                </div>
-                                <div class="card_content">
-                                    <span class="card_title">Project-Name</span>
-                                    <span class="card_name">No Author</span>
-                                    <p class="card_text">No Description</p>
-                                    <button class="card_btn">read more</button>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="card_image">
-                                    <img src="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" alt="card Image">
-                                </div>
-                                <div class="card_content">
-                                    <span class="card_title">Project-Name</span>
-                                    <span class="card_name">No Author</span>
-                                    <p class="card_text">No Description</p>
-                                    <button class="card_btn">read more</button>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="card_image">
-                                    <img src="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" alt="card Image">
-                                </div>
-                                <div class="card_content">
-                                    <span class="card_title">Project-Name</span>
-                                    <span class="card_name">No Author</span>
-                                    <p class="card_text">No Description</p>
-                                    <button class="card_btn">read more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!--End of Activities-->
-        <aside id="activities" class="row scrollto clearfix" data-featherlight-gallery data-featherlight-filter="a">
-            <div class="row clearfix">
-                
-                <div class="col-2-3">
-
-                    <a href="images/activities-images/activities-01.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.1s"><img src="images/activities-images/activities-01.jpg" alt="Landing Page"/></a>
-
-                    <a href="images/activities-images/activities-02.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.3s"><img src="images/activities-images/activities-02.jpg" alt="Landing Page"/></a>
-
-                    <a href="images/activities-images/activities-03.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.5s"><img src="images/activities-images/activities-03.jpg" alt="Landing Page"/></a>
-                    
-                    <a href="images/activities-images/activities-01.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.1s"><img src="images/activities-images/activities-01.jpg" alt="Landing Page"/></a>
-
-                    <a href="images/activities-images/activities-02.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.3s"><img src="images/activities-images/activities-02.jpg" alt="Landing Page"/></a>
-
-                    <a href="images/activities-images/activities-03.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.5s"><img src="images/activities-images/activities-03.jpg" alt="Landing Page"/></a>
-
-                </div>
-
-                <div class="col-3">
-
-                    <div class="section-heading" style="text-align: right;">
-                        <h3>Activities</h3>
-                        <h2 class="section-title" style="text-transform: uppercase;">Related Activities Software Testing</h2>
-                        <p class="section-subtitle">I'm actively involved in computer engineering pursuits, including coursework, research, and practical projects. As a member of computer engineering clubs, I collaborate on innovative projects and stay updated on industry trends. I'm passionate about exploring emerging fields like AI, IoT, and cybersecurity, and I'm committed to continuous learning and problem-solving in the dynamic world of computer engineering.</p>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </aside>
-        <!--End of Activities-->
-
-        <!--Certificates-->
-        <aside id="certificates" class="row text-center scrollto clearfix" data-featherlight-gallery data-featherlight-filter="a">
-
-            <div class="col-1">
-               <div class="section-heading">
-                   <h3>CERTIFICATES</h3>
-                   <h2 class="section-title" style="text-transform: uppercase;">All certificates</h2>
-               </div>
-           </div>
-           <a href="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-              data-wow-delay="0.1s"><img src="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" alt="Landing Page"/></a>
-           <a href="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-              data-wow-delay="0.3s"><img src="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" alt="Landing Page"/></a>
-           <a href="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-              data-wow-delay="0.5s"><img src="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" alt="Landing Page"/></a>
-           <a href="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-              data-wow-delay="1.1s"><img src="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" alt="Landing Page"/></a>
-           <a href="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-              data-wow-delay="0.9s"><img src="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" alt="Landing Page"/></a>
-           <a href="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-              data-wow-delay="0.7s"><img src="https://t4.ftcdn.net/jpg/04/72/65/73/360_F_472657366_6kV9ztFQ3OkIuBCkjjL8qPmqnuagktXU.jpg" alt="Landing Page"/></a>
-
-        </aside>
-
-        <!-- End of Certificate -->
-
-        <!-- Files -->
-        <section id="files" class="scrollto clearfix">
-            <div class="row clearfix">
-
-                <div class="col-2">
-
-                    <div class="section-heading">
-                        <h3>FILES</h3>
-                        <h2 class="section-title" style="text-transform: uppercase;">file in here you can dowload but do not allow to be published.</h2>
-                        <p class="section-subtitle">In this downloadable file, you'll find my RESUME. I hope you find it helpful and informative. Feel free to reach out to me if you have any questions or would like to discuss this topic further.</p>
-                    </div>
-
-                </div>
-
-                <div class="col-2">
-
-                    <div class="download_container">
-                        <i class="fa-regular fa-file-pdf fa-2x" style="color: #91C8E4;"></i><h4>RESUME INTERNSHIP</h4><a href="files/Suwit Saiso - Resume.pdf" download class="button"><i class="fa-solid fa-download fa-1x"></i>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End of Files -->
-
-    </main>
-    <!--End Main Content Area-->
-
-    <!--Footer-->
-    <footer id="landing-footer" class="clearfix">
-        <div class="row clearfix">
-
-            <p id="copyright" class="col-2">Thank for explore</a></p>
-
-            <!--Social Icons in Footer-->
-            <ul class="col-2 social-icons">
-                <li>
-                    <a target="_blank" title="Facebook" href="https://www.facebook.com/profile.php?id=100088287427924">
-                        <i class="fa-brands fa-facebook-f fa-1x"></i></i><span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Instagram" href="https://instagram.com/ssuwittt?igshid=MzRlODBiNWFlZA==">
-                        <i class="fa-brands fa-instagram fa-1x"></i></i><span>Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="X-Twitter" href="https://www.twitter.com/">
-                        <i class="fa-brands fa-x-twitter fa-1x"></i><span>X-Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/r-o-%E3%83%BC-n-y-n-e-ab64b7292/">
-                        <i class="fa-brands fa-linkedin-in fa-1x"></i></i><span>Linkedin</span>
-                    </a>
-                </li>
-            </ul>
-            <!--End of Social Icons in Footer-->
-        </div>
-    </footer>
-    <!--End of Footer-->
-
-</div>
-
-<!-- Include JavaScript resources -->
-<script src="js/jquery.1.8.3.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/featherlight.min.js"></script>
-<script src="js/featherlight.gallery.min.js"></script>
-<script src="js/jquery.enllax.min.js"></script>
-<script src="js/jquery.scrollUp.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.stickyNavbar.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/images-loaded.min.js"></script>
-<script src="js/lightbox.min.js"></script>
-<script src="js/site.js"></script>
-
-<!-- Vanilla-tilt -->
-<script type="text/javascript" src="js/vanilla-tilt.js"></script>
-<script>
-    VanillaTilt.init(document.querySelectorAll(".card_container .card"), {
-        max: 25,
-        speed: 400,
-        glare: true,
-        "max-glare": 1
-    });
-</script>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
-
+    <script src="./js/script.js"></script>
 </body>
 </html>
