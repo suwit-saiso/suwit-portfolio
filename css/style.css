@@ -492,3 +492,30 @@ body {
     transform: translateX(-50%) scale(1);
     top: -1.8rem;
 }
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .profile-page img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 45%;
+    }
+    
+    .profile-page img {
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 40%;
+    }
+}
