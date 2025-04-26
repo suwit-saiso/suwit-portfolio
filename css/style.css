@@ -520,7 +520,7 @@ body {
 
 @media (max-width: 768px) {
     html {
-        font-size: 40%;
+        font-size: 50%;
         transform: rotate(90deg);
     }
 }
