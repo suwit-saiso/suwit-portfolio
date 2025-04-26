@@ -366,6 +366,10 @@ body {
     color: var(--main-color);
 }
 
+.workeduc-box .img-box {
+    margin-top: 1rem;
+}
+
 .workeduc-box .img-box,
 .portfolio-box .img-box {
     display: flex;
@@ -517,17 +521,6 @@ body {
 @media (max-width: 768px) {
     html {
         font-size: 40%;
-    }
-
-    .profile-page p {
-        font-size: .8rem;
-        text-align: justify;
-    }
-
-    .btn {
-        width: 6rem;
-        height: 1.6rem;
-        font-size: .8rem;
-        font-weight: 400;
+        transform: rotate(90deg);
     }
 }
