@@ -2,218 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suwit Saiso</title>
-    <link rel="icon" type="images/x-icon" href="">
     <link rel="stylesheet" href="./css/style.css">
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="cover cover-left"></div>
-        <div class="cover cover-right"></div>
-
-        <div class="book">
-            <!-- profile page -->
-             <div class="book-page page-left">
-                <div class="profile-page">
-                    <img src="./images/profile.jpg" alt="">
+    <header class="header">
+        <a href="#" class="logo"><span>Suwit Saiso</span></a>
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <button class="visit-btn">Visit Github</button>
+    </header>
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="./images/profile.jpg" alt="">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
                     <h1>Suwit Saiso</h1>
-                    <h3>Software Developer</h3>
-
-                    <div class="social-media">
-                        <a href="#"><i class='bx bxl-facebook'></i></a>
-                        <a href="#"><i class='bx bxl-twitter'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="#"><i class='bx bxl-instagram' ></i></a>
-                    </div>
-
-                    <p>Hi, I'm Suwit Saiso. Recent Computer Engineering graduate with a strong passion for technology and continuous learning. Eager to apply academic knowledge to real-world challenges, develop practical skills, and contribute to a dynamic team environment. Quick to adapt, highly motivated, and ready to grow in a professional setting.<p>
-
-                    <div class="btn-box">
-                        <a href="./other/Suwit Saiso - CV.pdf" class="btn" download="Suwit Saiso - CV">Dowload CV</a>
-                        <a href="#" class="btn contact-me"">Contact Me</a>
-                    </div>
+                    <span>Software Developer / Network</span>
                 </div>
-            </div>
-            <!-- page 1 & page 2 -->
-            <div class="book-page page-right turn" id="turn-1">
-                <!-- page 1 (work experience) -->
-                <div class="page-front">
-                    <h1 class="title">Work Experience</h1>
-                    <div class="workeduc-box">
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar'></i>1/04/2024 - 14/06/2024</span>
-                            <h3>Field Service Engineer (Network) - Yip In Tsoi & Co.,Ltd. - YipInTsoi Group</h3>
-                            <p>
-                                Studied core networking concepts, including architecture, data transmission, and key protocols (TCP/IP, HTTP, DNS, etc.). Learned about networking devices and their roles, practiced IP addressing and subnetting, used Wireshark for packet analysis, and developed basic troubleshooting skills.
-                            </p>
-                        </div>
-                        <!-- <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar'></i>2024 - 2024</span>
-                            <h3>Position - Company</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam accusantium quis assumenda dicta tenetur ipsam? Eveniet reiciendis eaque ab fugit illum at asperiores quod.</p>
-                        </div> -->
-                    </div>
-                    <span class="number-page">1</span>
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-1">
-                        <i class='bx bx-chevron-right'></i>
-                    </span>
+                <div class="btn-group">
+                    <div class="btn">Download CV</div>
+                    <div class="btn">Contact</div>
                 </div>
-                <!-- page 2 (education) -->
-                <div class="page-back">
-                    <h1 class="title">Education</h1>
-                    <div class="workeduc-box">
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar'></i>21/06/2021 - Present</span>
-                            <h3>Bachelor of Computer Engineering - Naresuan University</h3>
-                            <span class="year"><i class='bx bx-map-pin'></i>Phitsanulok, Thailand</span>
-                            <div class="img-box">
-                                <img src="./images/education.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar'></i>2024 - 2024</span>
-                            <h3>Position - Company</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam accusantium quis assumenda dicta tenetur ipsam? Eveniet reiciendis eaque ab fugit illum at asperiores quod.</p>
-                        </div> -->
-                    </div>
-                    <span class="number-page">2</span>
-                    <!-- prev button -->
-                    <span class="nextprev-btn back" data-page="turn-1">
-                        <i class='bx bx-chevron-left' ></i>
-                    </span>
-                </div>
-            </div>
-            <!-- page 3 & page 4 -->
-            <div class="book-page page-right turn" id="turn-2">
-                <!-- page 3 (my services) -->
-                <div class="page-front">
-                    <h1 class="title">My Services</h1>
-                    <div class="services-box">
-                        <div class="services-content">
-                            <i class='bx bx-question-mark'></i>
-                            <h3>No Data</h3>
-                            <p>Waiting for information.</p>
-                            <a href="#" class="btn">Read More</a>
-                        </div>
-                        <!-- <div class="services-content">
-                            <i class='bx bx-code-alt' ></i>
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#" class="btn">Read More</a>
-                        </div>
-                        <div class="services-content">
-                            <i class='bx bx-code-alt' ></i>
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#" class="btn">Read More</a>
-                        </div>
-                        <div class="services-content">
-                            <i class='bx bx-code-alt' ></i>
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#" class="btn">Read More</a>
-                        </div> -->
-                    </div>
-                    <span class="number-page">3</span>
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-2">
-                        <i class='bx bx-chevron-right'></i>
-                    </span>
-                </div>
-                <!-- page 4 (my skills) -->
-                <div class="page-back">
-                    <h1 class="title">My Skills</h1>
-                    <div class="skills-box">
-                        <div class="skills-content">
-                            <h3>Front-End</h3>
-                            <div class="content">
-                                <span><i class='bx bxl-html5' ></i>HTML</span>
-                                <span><i class='bx bxl-css3' ></i>CSS</span>
-                                <span><i class='bx bxl-javascript' ></i>JS</span>
-                                <span><i class='bx bxl-bootstrap' ></i>Bootstrap</span>
-                            </div>
-                        </div>
-                        <div class="skills-content">
-                            <h3>Back-End</h3>
-                            <div class="content">
-                                <span><i class='bx bxl-python' ></i>Python</span>
-                                <span><i class='bx bxl-java' ></i>Java</span>
-                                <span><i class='bx bxl-php' ></i>PHP</span>
-                            </div>
-                        </div>
-                        <div class="skills-content">
-                            <h3>UX / UI Design</h3>
-                            <div class="content">
-                                <span><i class='bx bxl-figma' ></i>Figma</span>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="number-page">4</span>
-                    <!-- prev button -->
-                    <span class="nextprev-btn back" data-page="turn-2">
-                        <i class='bx bx-chevron-left' ></i>
-                    </span>
-                </div>
-            </div>
-            <!-- page 5 & page 6 -->
-            <div class="book-page page-right turn" id="turn-3">
-                <!-- page 5 (latest project or my portfolio) -->
-                <div class="page-front">
-                    <h1 class="title">Latest Project</h1>
-                    <div class="portfolio-box">
-                        <div class="img-box">
-                            <img src="./images/portfolio.JPG" alt="">
-                        </div>
-                        <div class="info-box">
-                            <div class="info-title">
-                                <h3>ASKRS</h3>
-                                <a href="https://github.com/suwit-saiso/Authenticated-Secure-Key-Recovery-System" target="_blank">Senior Project<i class='bx bx-link-external' ></i></a>
-                            </div>
-                            <p>Tech Used: Python, Flask, Socket Connection, Docker</p>
-                            <p>Designed and built a secure Key Recovery System (KRS) to prevent data loss from key mismanagement. Added PKCE-like challenge and certificate/token-based authentication to boost security and reliability.</p>
-                        </div>
-                        <div class="btn-box">
-                            <a href="https://github.com/suwit-saiso/Authenticated-Secure-Key-Recovery-System" class="btn" target="_blank">Source Code</a>
-                            <a href="https://github.com/suwit-saiso" class="btn" target="_blank">More Projects</a>
-                        </div>
-                    </div>
-                    <span class="number-page">5</span>
-                    <!-- next button -->
-                    <span class="nextprev-btn" data-page="turn-3">
-                        <i class='bx bx-chevron-right'></i>
-                    </span>
-                </div>
-                <!-- page 6 (contact me) -->
-                <div class="page-back">
-                    <h1 class="title">Contact Me</h1>
-                    <div class="contact-box">
-                        <form action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="77f34633-7efe-4fe0-93b6-627ea7871a3d">
-                            <input type="text" class="field" placeholder="Full Name" required>
-                            <input type="email" class="field" placeholder="Email Address" required>
-                            <textarea name="message" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
-                            <input type="submit" class="btn" value="Send Message">
-                        </form>
-                    </div>
-                    <span class="number-page">6</span>
-                    <!-- prev button -->
-                    <span class="nextprev-btn back" data-page="turn-3">
-                        <i class='bx bx-chevron-left' ></i>
-                    </span>
-                    <a href="#" class="back-profile">
-                        <p>Profile</p>
-                        <i class='bx bxs-user' ></i>
-                    </a>
+                <div class="socials">
+                    <i class='bx bxl-github' ></i>
+                    <i class='bx bxl-linkedin-square' ></i>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <i class='bx bx-code-alt' ></i>
+                    <span>Position</span>
+                    <h3>x Year</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum esse neque ratione.</p>
+                </div>
+                <div class="grid-card">
+                    <i class='bx bx-code-alt' ></i>
+                    <span>Position</span>
+                    <h3>x Year</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum esse neque ratione.</p>
+                </div>
+                <div class="grid-card">
+                    <i class='bx bx-code-alt' ></i>
+                    <span>Position</span>
+                    <h3>x Year</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum esse neque ratione.</p>
+                </div>
+                <div class="grid-card">
+                    <i class='bx bx-code-alt' ></i>
+                    <span>Position</span>
+                    <h3>x Year</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum esse neque ratione.</p>
+                </div>
+            </div>
+            <img src="./images/education.jpg" alt="">
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./images/portfolio.JPG" alt="">
+                <h3>Project X</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum asperiores cumque?</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./images/portfolio.JPG" alt="">
+                <h3>Project X</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum asperiores cumque?</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./images/portfolio.JPG" alt="">
+                <h3>Project X</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum asperiores cumque?</p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="input">
+                <input type="text" placeholder="exanple@gmail.com">
+                <i class='bx bx-envelope' ></i>
+            </div>
+            <div class="btn">Submit</div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">© All Rights Reserved | Suwit Saiso</p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
