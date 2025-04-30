@@ -426,7 +426,7 @@ footer ul li a {
         display: flex;
         flex-direction: column;
         text-align: center;
-        background: rgba(0, 0, 0, .9);
+        background: rgba(0, 0, 0, .8);
         border-radius: 3rem;
         display: none;
     }
@@ -447,8 +447,13 @@ footer ul li a {
     .about-container img {
         width: 80vw;
     }
+    .project-card img {
+        width: 85%;
+    }
     .input-box input {
         padding: .5rem 3rem;
+        width: 80%;
+        font-size: 1.5rem;
     }
     .input-box input::placeholder {
         font-size: 1.5rem;
