@@ -282,9 +282,51 @@ section {
     width: 80%;
 }
 
-ul {
-    display: block;
-    list-style-type: disc;
+.skills-card {
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.skills {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .skills-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.logo-pro {
+    margin-top: .5rem;
+}
+
+.logo-pro span {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 5rem;
+    border: var(--border);
+    border-radius: .3rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.logo-pro span:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.logo-pro span i {
+    font-size: 3rem;
+    color: var(--black-color);
 }
 
 @media (max-width: 1280px) {
