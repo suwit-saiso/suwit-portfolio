@@ -305,6 +305,10 @@ section {
 
 .logo-pro {
     margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
 }
 
 .logo-pro span {
@@ -396,5 +400,8 @@ section {
     }
     .grid-info {
         width: 20vh;
+    }
+    .logo-pro {
+        display: grid;
     }
 }
