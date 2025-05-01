@@ -10,6 +10,7 @@
     scroll-behavior: smooth;
     list-style: none;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -177,9 +178,9 @@ section {
     transition: .2s ease-in-out;
 }
 
-.btn:hover {
+.btn:hover{
     background: transparent;
-     color: var(--black-color);
+    color: var(--black-color);
 }
 
 .btn-group .btn:nth-child(2) {
@@ -218,12 +219,83 @@ section {
     transform: scale(1.1);
 }
 
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.resume-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-card {
+    display: flex;
+    gap: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.experience {
+    margin-bottom: 2rem;
+}
+
+.grid-info {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+}
+
+.grid-info h3 {
+    color: var(--main-color);
+}
+
+.grid-info p {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.grid-info p i {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.grid-content {
+    width: 80%;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+}
+
 @media (max-width: 1280px) {
     html {
         font-size: 80%;
     }   
     .about {
         padding: 0 20%;
+    }
+    .resume-content {
+        flex-direction: column;
     }
 }
 
@@ -239,6 +311,9 @@ section {
     }
     .profile-img {
         width: 15vh;
+    }
+    .grid-content {
+        width: 100%;
     }
 }
 
@@ -273,5 +348,11 @@ section {
     }
     header .logo{
         font-size: 1.5rem;
+    }
+    .grid-card {
+        gap: .2rem;
+    }
+    .grid-info {
+        width: 20vh;
     }
 }
