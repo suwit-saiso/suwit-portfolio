@@ -283,6 +283,10 @@ section {
 }
 
 .skills-card {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
 }
@@ -324,13 +328,113 @@ section {
     transition: .3s ease;
 }
 
-.logo-pro span:hover {
+.logo-pro span:hover{
+    background-color: var(--main-color);
     box-shadow: var(--box-shadow);
 }
 
 .logo-pro span i {
     font-size: 3rem;
     color: var(--black-color);
+}
+
+.project-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.project-content h3 {
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.project-content .content {
+    display: flex;
+}
+
+.project-content .content .text {
+    padding: 1rem;
+    width: 80%;
+}
+
+.project-img {
+    display: flex;
+    overflow: hidden;
+    width: 25vh;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: var(--box-shadow);
+}
+
+.project-img img {
+    width: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.project-img img:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button .btn:nth-child(2) {
+    background: transparent;
+    color: var(--black-color);
+}
+
+.button .btn:nth-child(2):hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.input-box input {
+    position: relative;
+    border-radius: 1rem;
+    border: var(--border);
+    padding: 1rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input textarea {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: var(--border);
+}
+
+.input-box button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
 }
 
 @media (max-width: 1280px) {
